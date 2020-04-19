@@ -1,0 +1,88 @@
+h1
+{
+  color: rgb(0, 0, 155);
+  text-align: center;
+  text-shadow: 6px 6px 12px black;
+}
+
+h2
+{
+  color: rgb(0, 0, 155);
+  text-align: center;
+  text-shadow: 6px 6px 12px black;
+}
+
+body
+{
+  background-image: url(fondCV.jpg);
+}
+
+p
+{
+  font-family: 'ambleregular', Impact, "Arial Black", Arial, Verdana;
+}
+
+@font-face
+{
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.corps
+{
+  border: 0.2em rgb(0, 0, 155) solid;
+  box-shadow: 6px 6px 12px black;
+  padding-left: 15%;
+}
+
+#sec1
+{
+  margin-right: 1%;
+}
+
+#sec2
+{
+  margin-right: 1%;
+}
+
+#mainpage
+{
+  display: flex;
+}
+
+#leftbar
+{
+  height: 900px;
+  width: 150px;
+  background-color: yellow;
+}
+
+#rightbar
+{
+  margin-left: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1024px)
+{
+
+#leftbar
+  {
+    display:none;
+  }
+
+#rightbar
+  {
+    flex-direction: column;
+  }
+
+}
