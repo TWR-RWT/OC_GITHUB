@@ -1,23 +1,97 @@
+h3
+{
+  background-color: rgb(33, 33, 33);
+  color: rgb(253, 216, 53) ;
+  text-align: center;
+}
+
+main
+{
+  display: flex;
+}
+
+aside
+{
+  background-color: rgb(253, 216, 53) ;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.liseret
+{
+  padding-left: 12%;
+  padding-right: 6%;
+  padding-bottom: 10%;
+  text-align: justify;
+}
+
+#loisirs
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+figure
+{
+  margin-top: 0em;
+  padding-top: 0em;
+  text-align: center;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
+}
+
+article
+{
+  margin: 5%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 h1
 {
-  color: rgb(0, 0, 155);
-  text-align: center;
-  text-shadow: 6px 6px 12px black;
+  font-size: 3em;
+  margin-bottom: 0em;
 }
 
-h2
+h4
 {
-  color: rgb(0, 0, 155);
-  text-align: center;
-  text-shadow: 6px 6px 12px black;
+  margin-top: 0em;
+  margin-bottom: 11em;
 }
 
-body
+td
 {
-  background-image: url(fondCV.jpg);
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
-p
+#Tristan
+{
+  color: rgb(253, 216, 53) ;
+}
+
+.bordure
+{
+  border-bottom: 0.2em;
+  border-bottom-color: rgb(253, 216, 53) ;
+  border-bottom-style: solid;
+  padding-bottom: 0.3em;
+}
+
+.jaune
+{
+  color: rgb(253, 216, 53) ;
+  padding-right: 1em;
+}
+
+/* Si je veux préciser mes polices préférées
+
 {
   font-family: 'ambleregular', Impact, "Arial Black", Arial, Verdana;
 }
@@ -33,56 +107,14 @@ p
          url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-.corps
-{
-  border: 0.2em rgb(0, 0, 155) solid;
-  box-shadow: 6px 6px 12px black;
-  padding-left: 15%;
-}
-
-#sec1
-{
-  margin-right: 1%;
-}
-
-#sec2
-{
-  margin-right: 1%;
-}
-
-#mainpage
-{
-  display: flex;
-}
-
-#leftbar
-{
-  height: 900px;
-  width: 150px;
-  background-color: yellow;
-}
-
-#rightbar
-{
-  margin-left: 2%;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-}
+}*/
 
 @media screen and (max-width: 1024px)
 {
 
-#leftbar
+aside
   {
     display:none;
-  }
-
-#rightbar
-  {
-    flex-direction: column;
   }
 
 }
