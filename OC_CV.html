@@ -3,37 +3,34 @@
 <head>
   <meta charset="utf-8">
   <title>CV Tristan pour OC</title>
-  <link rel="stylesheet" href="OC_CV_CSS.css">
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/OC_CV_CSS.css">
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/beb2ac982e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <main>
-    <aside> <!-- liseret à gauche -->
-      <header>
+  <main class="container" id="main">
+    <aside class="col-lg-3"> <!-- liseret à gauche -->
+      <div>
         <figure>
           <a href="moimini.jpg"><img src="moimini.jpg" alt="Photo portrait" /></a>
         </figure>
-      </header>
+      </div>
       <div>
         <h3>CONTACT</h3>
-        <p class="liseret">Adresse<br/>
-        Montreuil, France<br/>
-        <br/>
-        Téléphone<br/>
-        06 00 00 00 00<br/>
-        <br/>
-        Email<br/>
-        nom@email.fr<br/>
-        <br/>
-        Site web<br/>
-        www.name.com<br/>
-        <br/>
-        Skype<br/>
-        @nom_dutilisateur<br/>
-        <br/>
-        </p>
+        <ul class="liseret contact_content">
+          <li class="contact_content_li">Adresse<br/>
+          Montreuil, France</li>
+          <li class="contact_content_li">Téléphone<br/>
+          06 00 00 00 00</li>
+          <li class="contact_content_li">Email<br/>
+          nom@email.fr</li>
+          <li class="contact_content_li">Site web<br/>
+          www.name.com</li>
+          <li class="contact_content_li">Skype<br/>
+          @nom_dutilisateur</li>
+        </ul>
       </div>
       <div>
         <h3>A PROPOS DE MOI</h3>
@@ -49,13 +46,13 @@
       </footer>
     </aside>
 
-    <article> <!-- Partie principale à droite -->
-      <header>
+    <article class="col-lg-7"> <!-- Partie principale à droite -->
+      <section>
         <h1><span id="Tristan">Tristan</span> GRD</h1>
         <h4><span class="bordure">Etu</span>diant Developpeur</h4>
-      </header>
+      </section>
 
-      <div>
+      <section>
         <h2 class="bordure">
         <span class="jaune"><i class="fas fa-graduation-cap fa-2x"></i></span>
         FORMATION
@@ -80,9 +77,9 @@
             <p>Master Shipping & Trading</p></td>
           </tr>
         </table>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h2 class="bordure">
           <span class="jaune"><i class="fas fa-briefcase fa-2x"></i></span>
           EXPERIENCE PROFESSIONELLE
@@ -107,9 +104,9 @@
             <p>Stagiaire Analyste Marché</p></td>
           </tr>
         </table>
-      </div>
+      </section>
 
-      <footer>
+      <section>
         <h2 class="bordure">
           <span class="jaune"><i class="fas fa-pencil-alt fa-2x"></i></span>
           RECOMMANDATIONS
@@ -126,7 +123,7 @@
             Email: name@email.com</td>
           </tr>
         </table>
-      </footer>
+      </section>
     </article>
 
   </main>
