@@ -2,36 +2,59 @@
 hr {
   width: 100%;
   background-color: #ffc700;
+  margin-bottom: 0 !important;
 }
 
-#height-hr {
+.height-hr {
   height: 2px;
 }
 
 h4 {
   background-color: #424242;
-  color: white;
   text-align: center;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  margin-bottom: 2.5rem !important;
 }
 
-#height {
-  height: 1300px;
+p {
+  margin: 0 !important;
+  text-align: justify;
 }
 
-#td2-width {
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 0.5rem;
+}
+
+tr {
+  vertical-align: top;
+}
+
+main {
+  padding-left: 10px !important;
+}
+
+.maindiv {
+  height: 1500px;
+}
+
+.td2-width {
   width: 285px;
   padding-left: 1em;
 }
 
-#td1-width {
+.td1-width {
   width: 285px;
   padding-left: 1em;
 }
 
-figure {
-  text-align: center;
+.borderfigure {
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0.3rem #cc9f00;
+  overflow: hidden;
+  margin: auto;
+  max-width: 225px;
 }
 
 .text-decoration-color-primary {
@@ -39,11 +62,11 @@ figure {
 }
 
 .height-header {
-  height: 350px;
+  height: 500px;
 }
 
 .height-article {
-  height: 950px;
+  height: 100%;
 }
 
 .center {
@@ -9936,7 +9959,7 @@ h3 {
   }
 }
 @media screen and (min-width: 767.9px) {
-  #min-width-768 {
+  .min-width-768 {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
@@ -9945,6 +9968,17 @@ h3 {
     margin: -1px;
     padding: 0;
     border: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 800px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .borderfigure {
+    width: 150px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -9963,10 +9997,6 @@ h3 {
     display: inline !important;
   }
 
-  .height-article {
-    height: 100%;
-  }
-
   .pr-4-768 {
     padding-right: 4px;
   }
@@ -9978,39 +10008,55 @@ h3 {
   section {
     margin-top: 1em;
   }
+
+  .pl-4 {
+    padding-left: 0px !important;
+  }
+
+  h1 {
+    padding-left: 1rem;
+  }
+
+  h2 {
+    padding-left: 1rem;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  #td2-width {
+  .td2-width {
     width: 200px;
   }
 
-  #td1-width {
+  .td1-width {
     width: 200px;
   }
 
   .height-header {
-    height: 300px;
+    height: 450px;
   }
 
   .padding {
     padding: 3em;
   }
+
+  h1 {
+    font-size: 4.5em;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  #td2-width {
+  .td2-width {
     width: 200px;
   }
 
-  #td1-width {
+  .td1-width {
     width: 150px;
   }
 
   .height-header {
-    height: 285px;
+    height: 400px;
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3.8em;
   }
 
   h2 {
@@ -10018,7 +10064,7 @@ h3 {
   }
 
   h3 {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 
   h4 {
@@ -10030,30 +10076,40 @@ h3 {
   }
 }
 @media screen and (min-width: 1200px) {
-  .padding {
-    padding: 5em;
+  .maindiv {
+    margin: auto;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-}
-@media screen and (max-width: 576px) {
+
   .padding {
     padding: 0em;
   }
 
-  #td2-width {
+  h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 575.9px) {
+  .padding {
+    padding: 0em;
+  }
+
+  .td2-width {
     width: 130px;
   }
 
-  #td1-width {
+  .td1-width {
     width: 130px;
   }
 
   .height-header {
     height: 200px;
-    margin-top: 1em;
   }
 
   h1 {
-    font-size: 1.6em;
+    font-size: 2.8em;
   }
 
   h2 {
@@ -10077,22 +10133,36 @@ h3 {
   body {
     font-size: 0.7em;
   }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .borderfigure {
+    width: 100px;
+    height: 100px;
+  }
+
+  .maindiv {
+    height: 1100px;
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  #td2-width {
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .td2-width {
     width: 230px;
   }
 
-  #td1-width {
+  .td1-width {
     width: 230px;
   }
 
   .height-header {
-    height: 200px;
+    height: 350px;
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 3.2em;
   }
 
   h2 {
