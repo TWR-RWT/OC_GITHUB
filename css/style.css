@@ -9,6 +9,10 @@ hr {
   height: 2px;
 }
 
+.pl-1em {
+  padding-left: 1em;
+}
+
 h4 {
   background-color: #424242;
   text-align: center;
@@ -9958,6 +9962,56 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@media screen and (min-width: 425px) {
+  .max-width-425 {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    justify-content: start;
+    height: 100%;
+  }
+
+  header {
+    display: block;
+    height: 100%;
+  }
+
+  article {
+    display: block;
+  }
+
+  .maindiv {
+    height: 100% !important;
+  }
+
+  .min-width-425 {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  .td1-width {
+    width: 100% !important;
+  }
+
+  .td2-width {
+    width: 100% !important;
+  }
+}
 @media screen and (min-width: 767.9px) {
   .min-width-768 {
     position: absolute;
@@ -9968,6 +10022,12 @@ h3 {
     margin: -1px;
     padding: 0;
     border: 0;
+  }
+
+  main {
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 800px) {
@@ -10041,6 +10101,12 @@ h3 {
   h1 {
     font-size: 4.5em;
   }
+
+  main {
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .td2-width {
@@ -10089,6 +10155,12 @@ h3 {
 
   h1 {
     font-size: 5em;
+  }
+
+  main {
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 }
 @media screen and (max-width: 575.9px) {
