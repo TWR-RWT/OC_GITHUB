@@ -9985,8 +9985,8 @@ h3 {
     height: 100%;
   }
 
-  article {
-    display: block;
+  .art {
+    display: block !important;
   }
 
   .maindiv {
